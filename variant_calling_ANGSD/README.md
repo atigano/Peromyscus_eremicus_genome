@@ -6,7 +6,7 @@
 5. ```sort_index``` to sort and index bams
 
 ## Variant calling in ANGSD
-### These analyses are absed on 25 *Peromyscus eremicus* individuals, after removal of an outlier individual based on PCA and MDS 
-I run ANGSD iteratively. First I call variants with stringent quality filters across individuals from two populations (global calling) with ```angsd_peer_global_noout.sh```
+Note that these analyses include 25 *Peromyscus eremicus* individuals, after removal of an outlier individual based on PCA and MDS 
+I run ANGSD iteratively. First I call variants with stringent quality filters across individuals from two populations (global calling) with ```angsd_peer_global_noout.sh``` and then I calcuate the thetas with ```angsd_tehta_peer_global_noout.sh```
 
 
