@@ -11,7 +11,7 @@ I run ANGSD iteratively. First I call variants with stringent quality filters ac
 High-quality variants are recalled, and allele frequencies estimated, for each of the two populations with ```angsd_peer_pop.sh```
 
 I calculate the thetas with ```angsd_theta_peer_global_noout.sh``` to get estimates of π and Tajima's D across all individuals.
-```angsd_fst_motte_deepcanyon.sh``` to calculate FST between individuals from the two locations, Motte and Deep Canyon Reserves.
+I use ```angsd_fst_motte_deepcanyon.sh``` to calculate FST between the two locations, Motte and Deep Canyon Reserves.
 
 For accurate measures of π, i.e. corrected by the actual number of variant and invariant sites covered in each window see ```pi_correction_pipeline_peer_global_noout.sh```
 
