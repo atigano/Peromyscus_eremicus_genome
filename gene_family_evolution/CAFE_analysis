@@ -1,0 +1,26 @@
+Script for analyses of gene family expansion/contraction
+
+###take the file Orthogroups/Orthogroups.GeneCount.tsv from the Orthofinder results folder, check species names match between this and the tree
+###manipulation in excel
+1. add column for id
+2. rename first two columns: Description and ID
+3. rename species names (remove _ and . and all else but Genusspecies)
+4. remove total column
+5. calculate difference between min and max --> delta
+6. copy table to new sheet and filter
+7. copy back to BBedit and eliminate all extra empty lines and save
+8. trees need to be fixed: multiply all branch lengths by 100 and eliminate 1s at the node labels.
+
+
+###more restrictive
+/mnt/lustre/macmaneslab/shared/fastas_for_anna/version3/OrthoFinder/Results_Sep12/
+###less restrictive
+/mnt/lustre/macmaneslab/shared/fastas_for_anna/version2/OrthoFinder/Results_Sep12/
+
+###for 18 sp dataset
+#in CAFE
+#! cafe
+load -i orthogroups_18sp_delta25.txt -t 4 -l reports/run_18sp_delta25
+tree ((Dipodomysordii:9.830868,Castorcanadensis:9.830868):1.12194,(Jaculusjaculus:9.830868,(Cricetomysgambianus:6.068608,(((Acomyscahirinus:4.283255,Merionesunguiculatus:4.283255):0.686212,(Rattusnorvegicus:3.172937,(Grammomyssurdaster:2.8143,Musmusculus:2.8143):0.358637):1.79653):0.577412,((Microtusochrogaster:4.401463,(Mesocricetusauratus:3.271563,Cricetulusgriseus:3.271563):1.1299):0.244915,(Sigmodonhispidus:4.397941,((Peromyscuseremicus:2.573369,((Peromyscusmaniculatus:1.636031,Peromyscuspolionotus:1.636031):0.195794,Peromyscusleucopus:1.831825):0.741544):1.17885,Neotomalepida:3.752219):0.645722):0.248437):0.900501):0.521729):3.76226):1.12194)
+lambda -s 
+report reports/run_18sp_delta25
