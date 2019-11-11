@@ -6,3 +6,5 @@
 5. ```sort_index``` to sort and index bams
 
 # Variant calling in ANGSD
+## These analyses are absed on 25 *Peromyscus eremicus* individuals, after removal of an outlier individual
+### I run ANGSD iteratively
