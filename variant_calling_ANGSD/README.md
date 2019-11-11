@@ -7,7 +7,7 @@
 
 ## Variant calling in ANGSD
 Note that these analyses include 25 *Peromyscus eremicus* individuals, after removal of an outlier individual based on PCA and MDS 
-I run ANGSD iteratively. First I call variants with stringent quality filters across individuals from two populations (global calling) with ```angsd_peer_global_noout.sh``` 
+I run ANGSD iteratively. First I call variants with stringent quality filters across individuals from two populations (global calling) with ```angsd_peer_global_noout.sh```. All sites included in the analysis, variant and invariant, are called with ```angsd_peer_global_noout_allvar.sh```. 
 High-quality variants are recalled, and allele frequencies estimated, for each of the two populations with ```angsd_peer_pop.sh```
 
 I calculate the thetas with ```angsd_theta_peer_global_noout.sh``` to get estimates of π and Tajima's D across all individuals.
