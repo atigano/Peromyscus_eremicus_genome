@@ -1,7 +1,3 @@
-########### Script to covert allele frequencies in allele counts for sweepfinder. Careful about number of alleles vs. number of individuals (had to multiply everything by 2). 
-### This analyses included all sites, variant and invariant, but not polarized
-
-
 #!/bin/bash
 #SBATCH --partition=shared,macmanes
 #SBATCH --job-name=sweep
