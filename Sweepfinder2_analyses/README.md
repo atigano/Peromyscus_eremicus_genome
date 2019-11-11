@@ -1,7 +1,7 @@
-To identify selective sweeps I used Sweepfinder2. I use allele frequencies as outputted by ANGSD,
+To identify selective sweeps I used Sweepfinder2. I used allele frequencies as outputted by ANGSD.
 First, I converted allele frequencies into allele counts and formatted the file for Sweepfinder2 with the script ```sweepfinder_prep.sh``` separately for each chromosome.
 
-I then combined all individual chromosome files to calculate the Site Frequency Sprectrum in Sweepfinder2
+I then combined all individual chromosome, except chrX, files to calculate the Site Frequency Sprectrum in Sweepfinder2
 ```
 cat angsd_peer_global_noout_allvar.allcount.chr[!X]_*pilon > angsd_peer_global_noout_allvar.allcount.combined_nox
 echo -e "position\tx\tn\tfolded" | cat - angsd_peer_global_noout_allvar.allcount.combined_nox > angsd_peer_global_noout_allvar.allcount.combined.header_nox
