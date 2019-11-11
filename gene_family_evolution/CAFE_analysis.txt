@@ -11,12 +11,6 @@ Script for analyses of gene family expansion/contraction
 7. copy back to BBedit and eliminate all extra empty lines and save
 8. trees need to be fixed: multiply all branch lengths by 100 and eliminate 1s at the node labels.
 
-
-###more restrictive
-/mnt/lustre/macmaneslab/shared/fastas_for_anna/version3/OrthoFinder/Results_Sep12/
-###less restrictive
-/mnt/lustre/macmaneslab/shared/fastas_for_anna/version2/OrthoFinder/Results_Sep12/
-
 ###for 18 sp dataset
 #in CAFE
 #! cafe
