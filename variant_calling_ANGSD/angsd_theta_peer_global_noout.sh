@@ -15,5 +15,6 @@ cd ~/wgr_peromyscus/angsd_results_peer
 angsd -b ~/wgr_peromyscus/sample_lists/peer_goodbam_all_noout.txt -anc ~/genomes/Peer/Peer1.7.2.fasta -out ~/wgr_peromyscus/angsd_results_peer/angsd_peer_global_noout_folded.sfs -P 24 -doThetas 1 -doSaf 1 -pest angsd_peer_global_noout_folded.sfs -GL 1 -fold 1 -sites angsd_peer_global_noout_sites.txt
 
 
-#c. Estimate Tajimas D and other statistics (chromosome estimates)
+#c. Estimate Tajimas D and other statistics (chromosome and window estimates, respectively)
 thetaStat do_stat angsd_peer_global_noout_folded.sfs.thetas.idx
+thetaStat do_stat angsd_peer_global_noout_folded.sfs.thetas.idx -win 50000 -step 50000 -outnames theta_peer_50kb -nChr 50
